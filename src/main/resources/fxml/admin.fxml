@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<?import javafx.scene.control.PasswordField?>
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #d0f5ea; -fx-border-color: #1d8573; -fx-border-width: 5px;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.alabtaal.school.controller.AdminController">
+   <children>
+      <Text fill="#0e594c" layoutX="235.0" layoutY="139.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ADMIN ACCOUNT">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Text>
+      <TextField fx:id="nameTextField" layoutX="222.0" layoutY="200.0" promptText="             Username" style="-fx-background-color: transparent; -fx-border-color: #1d8573; -fx-border-width: 0px 0px 2px 0px;" />
+      <PasswordField fx:id="passwordField" layoutX="222.0" layoutY="238.0" promptText="             Password" style="-fx-background-color: transparent; -fx-border-color: #1d8573; -fx-border-width: 0px 0px 2px 0px;" />
+      <Button fx:id="signUpButton" layoutX="247.0" layoutY="318.0" mnemonicParsing="false" prefHeight="28.0" prefWidth="105.0" style="-fx-background-color: transparent; -fx-border-color: #1d8573; -fx-border-radius: 15px;" text="Register" textFill="#0e594c" />
+      <ImageView fitHeight="89.0" fitWidth="96.0" layoutX="256.0" layoutY="26.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/people.jpg" />
+         </image>
+      </ImageView>
+      <TextField fx:id="registrationNoTextField" layoutX="222.0" layoutY="159.0" promptText="         Registration No" style="-fx-background-color: transparent; -fx-border-color: #1d8573; -fx-border-width: 0px 0px 2px 0px;" />
+      <ImageView fitHeight="15.0" fitWidth="22.0" layoutX="214.0" layoutY="165.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/Registration.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="15.0" fitWidth="22.0" layoutX="214.0" layoutY="206.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/pic3.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="15.0" fitWidth="22.0" layoutX="214.0" layoutY="244.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/images.jpg" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

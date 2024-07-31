@@ -1,0 +1,12 @@
+spring:
+  main:
+    web-application-type: none
+  datasource:
+      url: jdbc:postgresql://localhost:5432/alabtaal
+      driver-class-name: org.postgresql.Driver
+      username: alabtaal
+      password: abt
+  jpa:
+    hibernate:
+      ddl-auto: update
+

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="495.0" prefWidth="608.0" style="-fx-background-color: #68ccc4; -fx-border-color: #1d8573; -fx-border-width: 5px;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.alabtaal.school.controller.ResultController">
+    <children>
+        <Text fill="PURPLE" layoutX="213.0" layoutY="45.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Report Card">
+            <font>
+                <Font size="26.0" />
+            </font>
+        </Text>
+        <Button fx:id="backButton" layoutX="548.0" layoutY="16.0" mnemonicParsing="false" style="-fx-background-color:               transparent; -fx-border-color: #0598ff; -fx-border-width: 0px 0px 2px 0px 0px;" text="BACK" textFill="RED" />
+        <Label fx:id="idLabel" layoutX="24.0" layoutY="120.0" text="Result ID" />
+        <TextField fx:id="idTextField" layoutX="84.0" layoutY="116.0" promptText="              Result ID" />
+        <Label layoutX="28.0" layoutY="292.0" text="Student" />
+        <Label layoutX="28.0" layoutY="159.0" text="Subject" />
+        <ChoiceBox fx:id="subjectChoiceBox" layoutX="84.0" layoutY="155.0" prefWidth="150.0" style="-fx-background-color: white;" />
+        <Label layoutX="31.0" layoutY="204.0" text="Marks" />
+        <TextField fx:id="marksTextField" layoutX="84.0" layoutY="200.0" promptText="               Marks" />
+        <Label layoutX="31.0" layoutY="252.0" text="Grade" />
+        <ChoiceBox fx:id="gradeChoiceBox" layoutX="84.0" layoutY="248.0" prefWidth="150.0" style="-fx-background-color: white;" />
+        <ChoiceBox fx:id="studentChoiceBox" layoutX="84.0" layoutY="288.0" prefWidth="150.0" style="-fx-background-color: white;" />
+      <Button fx:id="addButton" layoutX="44.0" layoutY="396.0" mnemonicParsing="false" prefHeight="28.0" prefWidth="79.0" style="-fx-border-color: #0598ff; -fx-background-color: #4ad9b5; -fx-border-radius: 5px;" text="Add" />
+      <Button fx:id="searchButton" layoutX="134.0" layoutY="396.0" mnemonicParsing="false" prefHeight="28.0" prefWidth="79.0" style="-fx-border-color: #35a14b; -fx-background-color: lightgreen; -fx-border-radius: 5px;" text="Search" />
+      <Button fx:id="updateButton" layoutX="134.0" layoutY="435.0" mnemonicParsing="false" prefHeight="28.0" prefWidth="79.0" style="-fx-border-color: #d94aa0; -fx-background-color: #d9c25d; -fx-border-radius: 5px;" text="Update" />
+      <Button fx:id="deleteButton" layoutX="44.0" layoutY="435.0" mnemonicParsing="false" prefHeight="28.0" prefWidth="79.0" style="-fx-border-color: Red; -fx-background-color: #d98175; -fx-border-radius: 5px;" text="Delete" />
+      <TableView fx:id="resultTable" layoutX="246.0" layoutY="73.0" prefHeight="391.0" prefWidth="348.0" style="-fx-border-color: #1d8573; -fx-border-width: 2px;">
+         <columns>
+            <TableColumn fx:id="idColumn" prefWidth="53.3333740234375" style="-fx-border-color: #1d8573; -fx-background-color: #88dbc0;" text="ID" />
+            <TableColumn fx:id="subjectColumn" prefWidth="73.33331298828125" style="-fx-background-color: #88dbc0; -fx-border-color: #1d8573;" text="Subject" />
+            <TableColumn fx:id="marksColumn" prefWidth="71.33331298828125" style="-fx-background-color: #88dbc0; -fx-border-color: #1d8573;" text="Marks" />
+            <TableColumn fx:id="gradeColumn" prefWidth="56.6666259765625" style="-fx-background-color: #88dbc0; -fx-border-color: #1d8573;" text="Grade" />
+            <TableColumn fx:id="studentColumn" prefWidth="88.66668701171875" style="-fx-background-color: #88dbc0; -fx-border-color: #1d8573;" text="Student" />
+         </columns>
+      </TableView>
+    </children>
+</AnchorPane>
